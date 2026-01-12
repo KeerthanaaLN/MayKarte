@@ -1,0 +1,70 @@
+<mvc:View
+    controllerName="maykarteui.controller.EventsCarousel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout">
+
+    <VBox class="sapUiMediumMarginTop">
+
+        <Title
+            text="Recommended Events"
+            level="H2"
+            class="sapUiSmallMarginBottom"/>
+
+        <Carousel
+            id="eventsCarousel"
+            height="420px"
+            pages="{ path: '/Events' }">
+
+            <customLayout>
+                <CarouselLayout visiblePagesCount="5"/>
+            </customLayout>
+
+            <!-- TEMPLATE -->
+            <pages>
+                <VBox
+                    width="220px"
+                    class="sapUiTinyMarginEnd">
+
+                    <f:Card height="100%">
+                        <f:content>
+                            <l:VerticalLayout>
+
+                                <!-- POSTER IMAGE -->
+                                <Image
+                                    src="{imageUrl}"
+                                    width="100%"
+                                    height="200px"
+                                    densityAware="false"
+                                    />
+
+                                <!-- EVENT NAME -->
+                                <Text
+                                    text="{eventName}"
+                                    class="sapUiSmallMarginTop"
+                                    wrapping="true"
+                                />
+
+                                <!-- EVENT TYPE -->
+                                <Text
+                                    text="{eventType}"
+                                    class="sapUiTinyMarginBottom"
+                                    wrapping="false"/>
+
+                                <!-- BOOK BUTTON -->
+                                <Button
+                                    text="Book Now"
+                                    type="Emphasized"
+                                    press=".onBookNow"
+                                    class="sapUiSmallMarginTop"/>
+
+                            </l:VerticalLayout>
+                        </f:content>
+                    </f:Card>
+
+                </VBox>
+            </pages>
+        </Carousel>
+    </VBox>
+</mvc:View>

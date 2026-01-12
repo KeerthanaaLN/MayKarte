@@ -1,0 +1,13 @@
+ID,booking_ID,event_ID,seatType_ID,quantity,unitPrice,totalPrice
+aa1aa2aa-aa3a-4aa1-aa2a-a3aa4aa5aa6a,a1a2a3a4-a5a6-4a1a-a2a3-a4a5a6a7a8a9,d1e5a6b7-c8d9-4e1f-a2b3-c4d5e6f7a8b9,a1b2c3d4-e5f6-4a1b-c2d3-e4f5a6b7c8d9,2,250.00,500.00
+bb2bb3bb-bb4b-5bb2-bb3b-b4bb5bb6bb7b,a1a2a3a4-a5a6-4a1a-a2a3-a4a5a6a7a8a9,d1e5a6b7-c8d9-4e1f-a2b3-c4d5e6f7a8b9,c3d4e5f6-a7b8-6c3d-e4f5-a6b7c8d9e0f1,1,75.00,75.00
+cc3cc4cc-cc5c-6cc3-cc4c-c5cc6cc7cc8c,b2b3b4b5-b6b7-5b2b-b3b4-b5b6b7b8b9c0,e2f6b7c8-d9e0-5f2a-b3c4-d5e6f7a8b9c0,d4e5f6a7-b8c9-7d4e-f5a6-b7c8d9e0f1a2,3,180.00,540.00
+dd4dd5dd-dd6d-7dd4-dd5d-d6dd7dd8dd9d,c3c4c5c6-c7c8-6c3c-c4c5-c6c7c8c9d0e1,f3a7c8d9-e0f1-6a3b-c4d5-e6f7a8b9c0d1,f6a7b8c9-d0e1-9f6a-b7c8-d9e0f1a2b3c4,2,120.00,240.00
+ee5ee6ee-ee7e-8ee5-ee6e-e7ee8ee9ee0e,c3c4c5c6-c7c8-6c3c-c4c5-c6c7c8c9d0e1,f3a7c8d9-e0f1-6a3b-c4d5-e6f7a8b9c0d1,a7b8c9d0-e1f2-0a7b-c8d9-e0f1a2b3c4d5,3,60.00,180.00
+ff6ff7ff-ff8f-9ff6-ff7f-f8ff9ff0ff1f,d4d5d6d7-d8d9-7d4d-d5d6-d7d8d9e0f1a2,a4b8d9e0-f1a2-7b4c-d5e6-f7a8b9c0d1e2,c9d0e1f2-a3b4-2c9d-e0f1-a2b3c4d5e6f7,4,50.00,200.00
+aa7aa8aa-aa9a-0aa7-aa8a-a9aa0aa1aa2a,d4d5d6d7-d8d9-7d4d-d5d6-d7d8d9e0f1a2,a4b8d9e0-f1a2-7b4c-d5e6-f7a8b9c0d1e2,b8c9d0e1-f2a3-1b8c-d9e0-f1a2b3c4d5e6,1,200.00,200.00
+bb8bb9bb-bb0b-1bb8-bb9b-b0bb1bb2bb3b,e5e6e7e8-e9e0-8e5e-e6e7-e8e9e0f1a2b3,b5c9e0f1-a2b3-8c5d-e6f7-a8b9c0d1e2f3,d0e1f2a3-b4c5-3d0e-f1a2-b3c4d5e6f7a8,3,90.00,270.00
+cc9cc0cc-cc1c-2cc9-cc0c-c1cc2cc3cc4c,e5e6e7e8-e9e0-8e5e-e6e7-e8e9e0f1a2b3,b5c9e0f1-a2b3-8c5d-e6f7-a8b9c0d1e2f3,e1f2a3b4-c5d6-4e1f-a2b3-c4d5e6f7a8b9,2,40.00,80.00
+dd0dd1dd-dd2d-3dd0-dd1d-d2dd3dd4dd5d,f6f7f8f9-f0f1-9f6f-f7f8-f9f0f1a2b3c4,c6d0f1a2-b3c4-9d6e-f7a8-b9c0d1e2f3a4,f2a3b4c5-d6e7-5f2a-b3c4-d5e6f7a8b9c0,2,180.00,360.00
+ee1ee2ee-ee3e-4ee1-ee2e-e3ee4ee5ee6e,a7a8a9a0-a1a2-0a7a-a8a9-a0a1a2b3c4d5,d7e1a2b3-c4d5-0e7f-a8b9-c0d1e2f3a4b5,b4c5d6e7-f8a9-7b4c-d5e6-f7a8b9c0d1e2,3,150.00,450.00
+ff2ff3ff-ff4f-5ff2-ff3f-f4ff5ff6ff7f,b8b9b0b1-b2b3-1b8b-b9b0-b1b2b3c4d5e6,e8f2b3c4-d5e6-1f8a-b9c0-d1e2f3a4b5c6,d6e7f8a9-b0c1-9d6e-f7a8-b9c0d1e2f3a4,2,220.00,440.00

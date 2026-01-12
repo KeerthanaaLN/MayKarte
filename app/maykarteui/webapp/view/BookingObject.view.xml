@@ -1,0 +1,68 @@
+<mvc:View
+    controllerName="maykarteui.controller.BookingObject"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <!-- this handles header, nav, scrolling content-->
+    <Page
+        title="Booking Details"
+        showNavButton="true"
+        navButtonPress="onNavBack"
+    >
+        <content>
+            <ObjectHeader
+                title="{bookingNumber}"
+                number="{totalAmount}"
+                numberUnit="INR"
+            >
+                <statuses>
+                    <ObjectStatus
+                        text="{status}"
+                        state="{
+                            path: 'status',
+                            formatter: '.formatStatusState'
+                        }"/>
+                </statuses>
+                <attributes>
+                    <ObjectAttribute
+                        title="Booking Date"
+                        text="{bookingDate}"
+                    />
+                </attributes>
+            </ObjectHeader>
+
+            <Table
+                headerText="Booking Items"
+                items="{
+                    path: 'items'
+                }"
+            >
+                <columns>
+                    <Column>
+                        <Text text="Event" />
+                    </Column>
+                    <Column>
+                        <Text text="Seat Type" />
+                    </Column>
+                    <Column>
+                        <Text text="Quantity" />
+                    </Column>
+                    <Column>
+                        <Text text="Total" />
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{event/eventName}" />
+                            <Text text="{seatType/seatType}" />
+                            <Text text="{quantity}" />
+                            <Text text="{totalPrice}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

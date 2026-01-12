@@ -1,0 +1,160 @@
+/* ============================================================
+   GLOBAL PAGE BACKGROUND
+   ============================================================ */
+html, body {
+    background-color: #f4f8ff !important;   /* soft blue background */
+}
+
+/* Dynamic Page background (List Report + Object Page) */
+.sapFDynamicPage {
+    background-color: #f4f8ff !important;
+}
+
+/* ============================================================
+   FILTER BAR STYLING
+   ============================================================ */
+.sapUiCompFilterBar {
+    background-color: #e6f0ff !important;   /* light blue */
+    border-bottom: 1px solid #b5c8e6 !important;
+}
+
+.sapUiCompFilterBar .sapMBtnInner {
+    background-color: #003e7e !important;  /* dark blue buttons */
+    color: white !important;
+    border-radius: 6px !important;
+}
+
+/* ============================================================
+   TABLE HEADER (List Report)
+   ============================================================ */
+.sapMListTblHdr {
+    background-color: #003366 !important; /* dark navy blue */
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* Alternating row colors */
+.sapMListTblRow:nth-child(even) {
+    background-color: #ffffff !important;
+}
+
+.sapMListTblRow:nth-child(odd) {
+    background-color: #ffffff !important;
+}
+
+/* Row hover effect */
+.sapMListTblRow:hover {
+    background-color: #d9e6ff !important;
+}
+
+/* ============================================================
+   TABLE CELL TEXT
+   ============================================================ */
+.sapMListTblCell {
+    color: #003366 !important; /* dark text */
+}
+
+/* Status Chips */
+.sapMObjStatusNone {
+    color: #0066cc !important;
+}
+
+.sapMObjStatusSuccess {
+    color: #1fa55b !important;
+}
+
+.sapMObjStatusError {
+    color: #d9534f !important;
+}
+
+.sapMObjStatusWarning {
+    color: #ff9900 !important;
+}
+
+/* ============================================================
+   OBJECT PAGE TITLE BAR (HEADER)
+   ============================================================ */
+.sapFDynamicPageTitle {
+    background-color: #003366 !important;
+    color: white !important;
+    border-bottom: 2px solid #002244 !important;
+}
+
+.sapFDynamicPageTitle .sapMTitle {
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* ==================== ADD LOGO NEXT TO TITLE ==================== */
+.sapFDynamicPageTitle .sapMTitle::before {
+    content: "";
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3SmqmFFNbsfSrrqb0ls5pfm4jbqRMMWVApg&s"); /* your logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;     /* adjust size */
+    height: 50px;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+/* Object Header status color */
+.sapFDynamicPageTitle .sapMObjStatus {
+    color: #ffea00 !important;
+}
+
+/* ============================================================
+   SECTION HEADERS (Object Page)
+   ============================================================ */
+.sapUxAPObjectPageSectionHeader {
+    background-color: #e6f0ff !important;
+    color: #003366 !important;
+    font-weight: bold !important;
+    border-left: 4px solid #003366 !important;
+}
+
+.sapUxAPObjectPageSubSection,
+.sapUxAPObjectPageSection {
+    background-color: #ffffff !important;
+}
+
+/* ============================================================
+   BUTTON STYLING
+   ============================================================ */
+.sapMBtnInner {
+    background-color: #ffffff !important;
+    color: rgb(17, 0, 112) !important;
+    border-radius: 6px !important;
+    border: 1px solid #003366 !important;
+}
+
+.sapMBtnInner:hover {
+    background-color: #7e002a !important;
+}
+
+/* Remove button outline */
+.sapMBtnInner:focus {
+    outline: none !important;
+}
+
+/* ============================================================
+   FOOTER BAR (Object Page)
+   ============================================================ */
+.sapFDynamicPageFooter {
+    background-color: #003366 !important;
+    color: white !important;
+}
+
+/* ============================================================
+   INPUT FIELDS
+   ============================================================ */
+.sapMInputBase {
+    background-color: #ffffff !important;
+    border-radius: 5px !important;
+    border: 1px solid #aac4e6 !important;
+}
+
+.sapMInputBase:focus {
+    border-color: #0055aa !important;
+    box-shadow: 0 0 5px rgba(0, 85, 170, 0.5) !important;
+}

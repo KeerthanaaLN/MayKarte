@@ -1,0 +1,110 @@
+<mvc:View
+    controllerName="maykarteui.controller.Header1"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt">
+
+    <!-- BookMyShow Style Header -->
+    <tnt:ToolHeader class="sapUiTinyMarginBottom">
+
+        <!-- Left Section: Logo & Brand -->
+        <HBox alignItems="Center" class="sapUiSmallMarginEnd">
+            <Image
+                src="image/maykarte.png"
+                width="40px"
+                height="40px"
+                tooltip="MayKarte Home"
+                press="onLogoPress"
+                decorative="false"
+                class="sapUiTinyMarginEnd"
+            />
+            <Title 
+                text="MayKarte" 
+                level="H3"
+                class="sapUiSmallMarginEnd"
+            />
+        </HBox>
+
+        <!-- Search Bar - Prominent like BookMyShow -->
+        <SearchField
+            width="35rem"
+            placeholder="Search for Movies, Events, Plays, Sports and Activities"
+            liveChange="onSearch"
+            showSearchButton="true"
+        />
+
+        <ToolbarSpacer />
+
+        <!-- Right Section: City, Sign In, Menu -->
+        <HBox alignItems="Center">
+            <!-- City Selector with Icon -->
+            <Select
+                width="10rem"
+                selectedKey="{/selectedCity}"
+                change="onCityChange">                
+                <items>
+                    <core:Item key="CHENNAI" text="Chennai" />
+                    <core:Item key="MUMBAI" text="Mumbai" />
+                    <core:Item key="HYDERABAD" text="Hyderabad" />
+                    <core:Item key="KOCHI" text="Kochi" />
+                    <core:Item key="BANGALORE" text="Bangalore" />
+                    <core:Item key="DELHI" text="Delhi-NCR" />
+                    <core:Item key="PUNE" text="Pune" />
+                    <core:Item key="KOLKATA" text="Kolkata" />
+                </items>
+            </Select>
+
+            <!-- Sign In Button -->
+            <Button
+                text="Sign In"
+                type="Emphasized"
+                press="onSignInPress"
+                class="sapUiSmallMarginBeginEnd"
+            />
+
+            <!-- Menu Button -->
+            <Button
+                icon="sap-icon://menu2"
+                type="Transparent"
+                press="onMenuPress"
+                tooltip="Menu"
+            />
+        </HBox>
+
+    </tnt:ToolHeader>
+
+    <!-- Optional: Navigation Bar (BookMyShow style tabs) -->
+    <IconTabBar
+        id="iconTabBar"
+        select="onTabSelect"
+        class="sapUiResponsiveContentPadding">
+        <items>
+            <IconTabFilter
+                text="Movies"
+                key="movies"
+                icon="sap-icon://video"
+            />
+            <IconTabFilter
+                text="Events"
+                key="events"
+                icon="sap-icon://calendar"
+            />
+            <IconTabFilter
+                text="Plays"
+                key="plays"
+                icon="sap-icon://theater"
+            />
+            <IconTabFilter
+                text="Sports"
+                key="sports"
+                icon="sap-icon://soccer"
+            />
+            <IconTabFilter
+                text="Activities"
+                key="activities"
+                icon="sap-icon://activities"
+            />
+        </items>
+    </IconTabBar>
+</mvc:View>

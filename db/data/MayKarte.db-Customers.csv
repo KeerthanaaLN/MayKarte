@@ -1,0 +1,13 @@
+ID,customerID,firstName,lastName,email,phoneNumber,createdAt,createdBy,modifiedAt,modifiedBy
+f1a2b3c4-d5e6-4f1a-b2c3-d4e5f6a7b8c9,CUST0001,John,Smith,john.smith@email.com,+1-555-0101,2024-11-01T09:00:00Z,system,2024-11-01T09:00:00Z,system
+a2b3c4d5-e6f7-5a2b-c3d4-e5f6a7b8c9d0,CUST0002,Emma,Johnson,emma.j@email.com,+1-555-0102,2024-11-02T10:00:00Z,system,2024-11-02T10:00:00Z,system
+b3c4d5e6-f7a8-6b3c-d4e5-f6a7b8c9d0e1,CUST0003,Michael,Williams,m.williams@email.com,+1-555-0103,2024-11-03T11:00:00Z,system,2024-11-03T11:00:00Z,system
+c4d5e6f7-a8b9-7c4d-e5f6-a7b8c9d0e1f2,CUST0004,Sarah,Brown,sarah.brown@email.com,+1-555-0104,2024-11-04T12:00:00Z,system,2024-11-04T12:00:00Z,system
+d5e6f7a8-b9c0-8d5e-f6a7-b8c9d0e1f2a3,CUST0005,David,Jones,david.jones@email.com,+1-555-0105,2024-11-05T13:00:00Z,system,2024-11-05T13:00:00Z,system
+e6f7a8b9-c0d1-9e6f-a7b8-c9d0e1f2a3b4,CUST0006,Lisa,Garcia,lisa.garcia@email.com,+1-555-0106,2024-11-06T14:00:00Z,system,2024-11-06T14:00:00Z,system
+f7a8b9c0-d1e2-0f7a-b8c9-d0e1f2a3b4c5,CUST0007,James,Martinez,james.m@email.com,+1-555-0107,2024-11-07T15:00:00Z,system,2024-11-07T15:00:00Z,system
+a8b9c0d1-e2f3-1a8b-c9d0-e1f2a3b4c5d6,CUST0008,Jennifer,Rodriguez,jen.rodriguez@email.com,+1-555-0108,2024-11-08T16:00:00Z,system,2024-11-08T16:00:00Z,system
+b9c0d1e2-f3a4-2b9c-d0e1-f2a3b4c5d6e7,CUST0009,Robert,Wilson,robert.w@email.com,+1-555-0109,2024-11-09T17:00:00Z,system,2024-11-09T17:00:00Z,system
+c0d1e2f3-a4b5-3c0d-e1f2-a3b4c5d6e7f8,CUST0010,Mary,Anderson,mary.anderson@email.com,+1-555-0110,2024-11-10T18:00:00Z,system,2024-11-10T18:00:00Z,system
+d1e2f3a4-b5c6-4d1e-f2a3-b4c5d6e7f8a9,CUST0011,William,Taylor,w.taylor@email.com,+1-555-0111,2024-11-11T09:00:00Z,system,2024-11-11T09:00:00Z,system
+e2f3a4b5-c6d7-5e2f-a3b4-c5d6e7f8a9b0,CUST0012,Patricia,Thomas,patricia.t@email.com,+1-555-0112,2024-11-12T10:00:00Z,system,2024-11-12T10:00:00Z,system

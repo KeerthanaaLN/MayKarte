@@ -1,0 +1,55 @@
+<mvc:View controllerName="maykarte222.controller.mkview"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}" showHeader="false" showNavButton="true" showFooter="true">
+        <content>
+        <tnt:ToolHeader class="sapUiTinyMarginBottom">
+            <HBox alignItems="Center" class="sapUiSmallMarginEnd">
+                <Image src="image/maykarte.png" width="40px" height="40px" tooltip="MayKarte Home" press="onLogoPress" class="sapUiTinyMarginEnd"/>
+                <Title text="MAYKARTE" level="H3"/>
+            </HBox>
+
+            <SearchField width="35rem" placeholder="Search for Movies, Events, Plays, Sports & Activities" liveChange="onSearch" showSearchButton="true"/>
+
+            <ToolbarSpacer />
+
+            <HBox alignItems="Center">
+                <Select width="10rem" selectedKey="{/selectedCity}" change="onCityChange">
+                    <items>
+                        <core:Item></core:Item>
+                    </items>
+                </Select>
+            </HBox>
+
+        </tnt:ToolHeader>
+
+        <Title id="Title1"/>
+            <Table id="Booking Table" items="{path:'/Bookings', parameters:{$expand:'customer'}}" mode="MultiSelect" growing="true" inset="false"  > 
+                <columns> 
+                    <Column><Text text="Booking No"/></Column>
+                    <Column><Text text="Customer ID"/></Column>
+                    <Column><Text text="Booking Date"/></Column>
+                    <Column><Text text="CustomerName"/></Column>
+                    <Column><Text text="Status"/></Column>
+                    <Column hAlign="End"><Text text="Total Amount"/></Column>
+                </columns>
+
+
+                <items>
+                    <ColumnListItem type="Navigation" press="onListItemPress">
+                    <cells>
+                        <Text text="{bookingNumber}"/>
+                        <Text text="{customer/customerID}"/>
+                        <Text text="{bookingDate}"/>
+                        <Text text="{customer/firstName} {customer/lastName}"/>
+                        <ObjectStatus text="{status}" state="{path:'status', formatter:'.formatStatusState'}" />
+                        <ObjectNumber number="{totalAmount}" unit="₹"/>
+                    </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

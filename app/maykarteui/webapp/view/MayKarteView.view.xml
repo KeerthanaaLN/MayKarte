@@ -1,0 +1,219 @@
+<mvc:View
+    controllerName="maykarteui.controller.MayKarteView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"
+    height="100%"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+        showHeader="false"
+        enableScrolling="true"
+        class="mayKartePage"
+    >
+        <content>
+            <!-- Header Section -->
+            <mvc:XMLView
+                id="headerView"
+                viewName="maykarteui.view.Header1"
+            />
+
+            <!-- Full Width Carousel Container -->
+            <VBox
+                width="100%"
+                class="carouselContainer"
+            >
+                <!-- Carousel with auto-play -->
+                <Carousel
+                    id="movieCarousel"
+                    width="100%"
+                    height="500px"
+                    loop="true"
+                    showPageIndicator="true"
+                    pageIndicatorPlacement="Bottom"
+                    arrowsPlacement="Content"
+                    pageChanged=".onCarouselPageChanged"
+                >
+                    <pages>
+                        <!-- Slide 1: Latest Movies -->
+                        <VBox
+                            width="100%"
+                            height="100%"
+                            renderType="Bare"
+                            class="carouselSlide slide1"
+                        >
+                            <Image
+                                src="{
+                                    path: 'ui>/slide1Image',
+                                    formatter: '.formatter.getPictureUrl'
+                                }"
+                                width="100%"
+                                height="500px"
+                                densityAware="false"
+                            />
+                            <VBox
+                                class="slideOverlay"
+                                justifyContent="End"
+                                alignItems="Start"
+                            >
+                                <Title
+                                    text="{i18n>carouselMoviesTitle}"
+                                    level="H1"
+                                    class="slideTitle"
+                                />
+                                <Text
+                                    text="{i18n>carouselMoviesText}"
+                                    class="slideText"
+                                />
+                                <Button
+                                    text="{i18n>carouselMoviesButton}"
+                                    type="Emphasized"
+                                    press=".onBookNow"
+                                    class="sapUiSmallMarginTop"
+                                />
+                            </VBox>
+                        </VBox>
+
+                        <!-- Slide 2: Live Events -->
+                        <VBox
+                            width="100%"
+                            height="100%"
+                            renderType="Bare"
+                            class="carouselSlide slide2"
+                        >
+                            <Image
+                                src="{
+                                    path: 'ui>/slide2Image',
+                                    formatter: '.formatter.getPictureUrl'
+                                }"
+                                width="100%"
+                                height="500px"
+                                densityAware="false"
+                            />
+                            <VBox
+                                class="slideOverlay"
+                                justifyContent="End"
+                                alignItems="Start"
+                            >
+                                <Title
+                                    text="{i18n>carouselEventsTitle}"
+                                    level="H1"
+                                    class="slideTitle"
+                                />
+                                <Text
+                                    text="{i18n>carouselEventsText}"
+                                    class="slideText"
+                                />
+                                <Button
+                                    text="{i18n>carouselEventsButton}"
+                                    type="Emphasized"
+                                    press=".onExploreEvents"
+                                    class="sapUiSmallMarginTop"
+                                />
+                            </VBox>
+                        </VBox>
+
+                        <!-- Slide 3: Sports & Activities -->
+                        <VBox
+                            width="100%"
+                            height="100%"
+                            renderType="Bare"
+                            class="carouselSlide slide3"
+                        >
+                            <Image
+                                src="{
+                                    path: 'ui>/slide3Image',
+                                    formatter: '.formatter.getPictureUrl'
+                                }"
+                                width="100%"
+                                height="500px"
+                                densityAware="false"
+                            />
+                            <VBox
+                                class="slideOverlay"
+                                justifyContent="End"
+                                alignItems="Start"
+                            >
+                                <Title
+                                    text="{i18n>carouselSportsTitle}"
+                                    level="H1"
+                                    class="slideTitle"
+                                />
+                                <Text
+                                    text="{i18n>carouselSportsText}"
+                                    class="slideText"
+                                />
+                                <Button
+                                    text="{i18n>carouselSportsButton}"
+                                    type="Emphasized"
+                                    press=".onViewSports"
+                                    class="sapUiSmallMarginTop"
+                                />
+                            </VBox>
+                        </VBox>
+
+                        <!-- Slide 4: Plays & Theatre -->
+                        <VBox
+                            width="100%"
+                            height="100%"
+                            renderType="Bare"
+                            class="carouselSlide slide4"
+                        >
+                            <Image
+                                src="{
+                                    path: 'ui>/slide4Image',
+                                    formatter: '.formatter.getPictureUrl'
+                                }"
+                                width="100%"
+                                height="500px"
+                                densityAware="false"
+                            />
+                            <VBox
+                                class="slideOverlay"
+                                justifyContent="End"
+                                alignItems="Start"
+                            >
+                                <Title
+                                    text="{i18n>carouselPlaysTitle}"
+                                    level="H1"
+                                    class="slideTitle"
+                                />
+                                <Text
+                                    text="{i18n>carouselPlaysText}"
+                                    class="slideText"
+                                />
+                                <Button
+                                    text="{i18n>carouselPlaysButton}"
+                                    type="Emphasized"
+                                    press=".onViewPlays"
+                                    class="sapUiSmallMarginTop"
+                                />
+                            </VBox>
+                        </VBox>
+                    </pages>
+                </Carousel>
+            </VBox>
+
+            <!-- Events Section -->
+            <VBox
+                id="eventsSection"
+                class="sapUiLargeMarginTop"
+                visible="true"
+            >
+                <mvc:XMLView viewName="maykarteui.view.EventsCarousel" />
+            </VBox>
+
+            <!-- Bookings Section -->
+            <VBox class="sapUiMediumMargin">
+                <mvc:XMLView
+                    id="bookingsView"
+                    viewName="maykarteui.view.Bookings"
+                />
+            </VBox>
+
+            <!-- Footer Section -->
+            <!-- <mvc:XMLView viewName="maykarteui.view.Footer" /> -->
+        </content>
+    </Page>
+</mvc:View>

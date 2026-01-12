@@ -1,0 +1,77 @@
+<mvc:View
+    controllerName="maykarteui.controller.Footer"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout">
+
+    <VBox
+        width="100%"
+        class="mayKarteFooter">
+
+        <!-- TOP LINKS -->
+        <l:Grid
+            defaultSpan="L3 M6 S12"
+            class="sapUiLargeMargin">
+
+            <!-- Movies -->
+            <VBox>
+                <Title text="Movies" level="H6" class="footerTitle"/>
+                <Link text="Now Showing"/>
+                <Link text="Coming Soon"/>
+                <Link text="Top Rated"/>
+                <Link text="IMAX Movies"/>
+            </VBox>
+
+            <!-- Events -->
+            <VBox>
+                <Title text="Events" level="H6" class="footerTitle"/>
+                <Link text="Live Concerts"/>
+                <Link text="Comedy Shows"/>
+                <Link text="Workshops"/>
+                <Link text="Exhibitions"/>
+            </VBox>
+
+            <!-- Plays -->
+            <VBox>
+                <Title text="Plays" level="H6" class="footerTitle"/>
+                <Link text="Theatre"/>
+                <Link text="Drama"/>
+                <Link text="Broadway"/>
+                <Link text="Regional Plays"/>
+            </VBox>
+
+            <!-- Sports -->
+            <VBox>
+                <Title text="Sports" level="H6" class="footerTitle"/>
+                <Link text="Cricket"/>
+                <Link text="Football"/>
+                <Link text="Badminton"/>
+                <Link text="Motorsports"/>
+            </VBox>
+
+        </l:Grid>
+
+        <!-- DIVIDER -->
+        <Toolbar class="footerDivider"/>
+
+        <!-- BOTTOM BAR -->
+        <HBox
+            justifyContent="SpaceBetween"
+            alignItems="Center"
+            class="sapUiSmallMargin footerBottom">
+
+            <Text
+                text="© 2026 MayKarte. All rights reserved."
+                class="footerText"/>
+
+            <HBox>
+                <Link text="About Us" class="footerLink"/>
+                <Link text="Contact" class="footerLink"/>
+                <Link text="Privacy Policy" class="footerLink"/>
+                <Link text="Terms & Conditions" class="footerLink"/>
+            </HBox>
+
+        </HBox>
+
+    </VBox>
+</mvc:View>

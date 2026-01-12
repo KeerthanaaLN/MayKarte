@@ -1,0 +1,56 @@
+<mvc:View 
+    controllerName="maykarteui.controller.Bookings"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+
+    <Table
+        id="bookingsTable"
+        items="{
+            path: '/Bookings',
+            parameters: {
+                $expand: 'customer'
+            }
+        }">
+        <!-- display above the table -->
+        <headerToolbar>
+            <!-- Horizontal layout -->
+            <Toolbar>
+                <Title text="Bookings List"/>
+                <!-- push controls to right -->
+                <ToolbarSpacer/>
+                <Button
+                    text="Refresh"
+                    icon="sap-icon://refresh"
+                    press="onRefresh"/>
+            </Toolbar>
+        </headerToolbar>
+
+        <columns> <!-- table header columns -->
+            <Column><Text text="Booking No"/></Column>
+            <Column><Text text="Booking Date"/></Column>
+            <Column><Text text="Customer"/></Column>
+            <Column><Text text="Status"/></Column>
+            <Column hAlign="End"><Text text="Total Amount"/></Column>
+        </columns>
+
+        <items>
+            <ColumnListItem type="Navigation" press=".onListItemPress">
+                <cells>
+                    <Text text="{bookingNumber}"/>
+                    <Text text="{bookingDate}"/>
+                    <Text text="{customer/firstName} {customer/lastName}"/>
+                    <!-- show text with color/ semantic meaning -->
+                    <!-- state property - decides the color of the status -->
+                    <!-- path value is passed as argument to the formatstatusstate fn and get the color -->
+                    <ObjectStatus
+                        text="{status}"
+                        state="{
+                            path: 'status',
+                            formatter: '.formatStatusState'
+                        }"/>
+                    <Text text="{totalAmount}"/>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>
