@@ -11,7 +11,7 @@
                 <Title text="MAYKARTE" level="H3"/>
             </HBox>
 
-            <SearchField width="35rem" placeholder="Search for Movies, Events, Plays, Sports & Activities" liveChange="onSearch" showSearchButton="true"/>
+            <SearchField width="35rem" placeholder="Search for Movies, Events, Plays, Sports &amp; Activities" liveChange="onSearch" showSearchButton="true"/>
 
             <ToolbarSpacer />
 
@@ -26,7 +26,7 @@
         </tnt:ToolHeader>
 
         <Title id="Title1"/>
-            <Table id="Booking Table" items="{path:'/Bookings', parameters:{$expand:'customer'}}" mode="MultiSelect" growing="true" inset="false"  > 
+            <Table id="bookingTable" items="{path:'/Bookings', parameters:{$expand:'customer'}}" mode="MultiSelect" growing="true" inset="true"  > 
                 <columns> 
                     <Column><Text text="Booking No"/></Column>
                     <Column><Text text="Customer ID"/></Column>
